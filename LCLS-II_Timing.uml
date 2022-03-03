@@ -81,13 +81,12 @@
         <packagedElement xmi:type="uml:Class" xmi:id="_yfRRYJphEeyz5IO1MYY_iQ" name="OL-MDL">
           <ownedAttribute xmi:type="uml:Property" xmi:id="_h7HuUpp8Eeyz5IO1MYY_iQ" name="cycle_pfts" type="_04KxwJm5Eeyz5IO1MYY_iQ" association="_h7HHQJp8Eeyz5IO1MYY_iQ"/>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_hFIV8pqGEeyz5IO1MYY_iQ" name="smaract_stage" type="_eOCNAJqGEeyz5IO1MYY_iQ" aggregation="composite" association="_hFHu4JqGEeyz5IO1MYY_iQ"/>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_aXw0IJqIEeyz5IO1MYY_iQ" name="Delay_CTL"/>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_cTRekJqIEeyz5IO1MYY_iQ" name="Delay_RBV"/>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_dg2E8JqIEeyz5IO1MYY_iQ" name="Delay_Hi_Lim"/>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_e3aPQJqIEeyz5IO1MYY_iQ" name="Delay_Low_Lim"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_aXw0IJqIEeyz5IO1MYY_iQ" name="Delay_CTL" type="_LXWooJqLEeyz5IO1MYY_iQ"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_cTRekJqIEeyz5IO1MYY_iQ" name="Delay_RBV" type="_LXWooJqLEeyz5IO1MYY_iQ"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_dg2E8JqIEeyz5IO1MYY_iQ" name="Delay_Hi_Lim" type="_LXWooJqLEeyz5IO1MYY_iQ"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_e3aPQJqIEeyz5IO1MYY_iQ" name="Delay_Low_Lim" type="_LXWooJqLEeyz5IO1MYY_iQ"/>
           <ownedAttribute xmi:type="uml:Port" xmi:id="_dxkPQJqNEeyz5IO1MYY_iQ" name="Delay" visibility="public" type="_LXWooJqLEeyz5IO1MYY_iQ" aggregation="composite"/>
-          <ownedAttribute xmi:type="uml:Port" xmi:id="_G-6hYJqOEeyz5IO1MYY_iQ" name="Calc_Position" type="_8SwS8JqIEeyz5IO1MYY_iQ" aggregation="composite"/>
-          <ownedAttribute xmi:type="uml:Port" xmi:id="_5Hvo4JsfEeyz5IO1MYY_iQ" name="Calc_Delay" type="_LXWooJqLEeyz5IO1MYY_iQ" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_54lN8Js1Eeyyx6Ts-NbKBQ" name="Delay_CTL" type="_LXWooJqLEeyz5IO1MYY_iQ" aggregation="composite"/>
           <ownedOperation xmi:type="uml:Operation" xmi:id="_Pl5FoJqLEeyz5IO1MYY_iQ" name="set">
             <ownedParameter xmi:type="uml:Parameter" xmi:id="_V_sgUJqLEeyz5IO1MYY_iQ" name="target" type="_LXWooJqLEeyz5IO1MYY_iQ"/>
           </ownedOperation>
@@ -95,11 +94,10 @@
             <ownedParameter xmi:type="uml:Parameter" xmi:id="_mlHacJqLEeyz5IO1MYY_iQ" type="_LXWooJqLEeyz5IO1MYY_iQ" direction="return"/>
           </ownedOperation>
           <nestedClassifier xmi:type="uml:Class" xmi:id="_eOCNAJqGEeyz5IO1MYY_iQ" name="SmarAct_Stage">
-            <ownedAttribute xmi:type="uml:Property" xmi:id="__CtukJqHEeyz5IO1MYY_iQ" name="Position_CTL"/>
-            <ownedAttribute xmi:type="uml:Property" xmi:id="_F_odYJqIEeyz5IO1MYY_iQ" name="Position_RBV"/>
-            <ownedAttribute xmi:type="uml:Property" xmi:id="_MMmV8JqIEeyz5IO1MYY_iQ" name="Position_Hi_Lim"/>
-            <ownedAttribute xmi:type="uml:Property" xmi:id="_QB5zkJqIEeyz5IO1MYY_iQ" name="Position_Low_Lim"/>
-            <ownedAttribute xmi:type="uml:Port" xmi:id="_B7r4EJqOEeyz5IO1MYY_iQ" name="Position_CTL" type="_8SwS8JqIEeyz5IO1MYY_iQ" aggregation="composite"/>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="__CtukJqHEeyz5IO1MYY_iQ" name="Position_CTL" type="_8SwS8JqIEeyz5IO1MYY_iQ"/>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_F_odYJqIEeyz5IO1MYY_iQ" name="Position_RBV" type="_8SwS8JqIEeyz5IO1MYY_iQ"/>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_MMmV8JqIEeyz5IO1MYY_iQ" name="Position_Hi_Lim" type="_8SwS8JqIEeyz5IO1MYY_iQ"/>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_QB5zkJqIEeyz5IO1MYY_iQ" name="Position_Low_Lim" type="_8SwS8JqIEeyz5IO1MYY_iQ"/>
             <ownedOperation xmi:type="uml:Operation" xmi:id="_pwOhAJqKEeyz5IO1MYY_iQ" name="put">
               <ownedParameter xmi:type="uml:Parameter" xmi:id="_59eLsJqKEeyz5IO1MYY_iQ" name="target" type="_8SwS8JqIEeyz5IO1MYY_iQ"/>
             </ownedOperation>
@@ -156,6 +154,7 @@
           </eAnnotations>
           <ownedEnd xmi:type="uml:Property" xmi:id="_hFOckJqGEeyz5IO1MYY_iQ" name="ol-mdl" type="_yfRRYJphEeyz5IO1MYY_iQ" association="_hFHu4JqGEeyz5IO1MYY_iQ"/>
         </packagedElement>
+        <packagedElement xmi:type="uml:InformationFlow" xmi:id="_-HZXwJs1Eeyyx6Ts-NbKBQ" name="ItemFlow13" informationSource="_54lN8Js1Eeyyx6Ts-NbKBQ" informationTarget="_aXw0IJqIEeyz5IO1MYY_iQ"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_0QTLYJm3Eeyz5IO1MYY_iQ" name="Laser_Locker">
         <packagedElement xmi:type="uml:Class" xmi:id="__qwKkJm5Eeyz5IO1MYY_iQ" name="Laser_Locker_Manager"/>
@@ -295,15 +294,14 @@
   <Blocks:Block xmi:id="_tCMbUJp6Eeyz5IO1MYY_iQ" base_Class="_tCKmIJp6Eeyz5IO1MYY_iQ"/>
   <Blocks:Block xmi:id="_eOECMJqGEeyz5IO1MYY_iQ" base_Class="_eOCNAJqGEeyz5IO1MYY_iQ"/>
   <PortsAndFlows:FlowProperty xmi:id="__CxY8JqHEeyz5IO1MYY_iQ" base_Property="__CtukJqHEeyz5IO1MYY_iQ" direction="in"/>
-  <PortsAndFlows:FlowProperty xmi:id="_F_q5oJqIEeyz5IO1MYY_iQ" base_Property="_F_odYJqIEeyz5IO1MYY_iQ"/>
+  <PortsAndFlows:FlowProperty xmi:id="_F_q5oJqIEeyz5IO1MYY_iQ" base_Property="_F_odYJqIEeyz5IO1MYY_iQ" direction="out"/>
   <PortsAndFlows:FlowProperty xmi:id="_MMoyMJqIEeyz5IO1MYY_iQ" base_Property="_MMmV8JqIEeyz5IO1MYY_iQ"/>
   <PortsAndFlows:FlowProperty xmi:id="_QB8P0JqIEeyz5IO1MYY_iQ" base_Property="_QB5zkJqIEeyz5IO1MYY_iQ"/>
   <PortsAndFlows:FlowProperty xmi:id="_aXzQYJqIEeyz5IO1MYY_iQ" base_Property="_aXw0IJqIEeyz5IO1MYY_iQ" direction="in"/>
-  <PortsAndFlows:FlowProperty xmi:id="_cTT60JqIEeyz5IO1MYY_iQ" base_Property="_cTRekJqIEeyz5IO1MYY_iQ"/>
+  <PortsAndFlows:FlowProperty xmi:id="_cTT60JqIEeyz5IO1MYY_iQ" base_Property="_cTRekJqIEeyz5IO1MYY_iQ" direction="out"/>
   <PortsAndFlows:FlowProperty xmi:id="_dg36IJqIEeyz5IO1MYY_iQ" base_Property="_dg2E8JqIEeyz5IO1MYY_iQ"/>
   <PortsAndFlows:FlowProperty xmi:id="_e3crgJqIEeyz5IO1MYY_iQ" base_Property="_e3aPQJqIEeyz5IO1MYY_iQ"/>
   <PortsAndFlows:ProxyPort xmi:id="_dxrkAJqNEeyz5IO1MYY_iQ" base_Port="_dxkPQJqNEeyz5IO1MYY_iQ"/>
-  <PortsAndFlows:ProxyPort xmi:id="_B7r4EZqOEeyz5IO1MYY_iQ" base_Port="_B7r4EJqOEeyz5IO1MYY_iQ"/>
-  <PortsAndFlows:ProxyPort xmi:id="_G-8WkJqOEeyz5IO1MYY_iQ" base_Port="_G-6hYJqOEeyz5IO1MYY_iQ"/>
-  <PortsAndFlows:ProxyPort xmi:id="_5Hw3AJsfEeyz5IO1MYY_iQ" base_Port="_5Hvo4JsfEeyz5IO1MYY_iQ"/>
+  <PortsAndFlows:ProxyPort xmi:id="_54oRQJs1Eeyyx6Ts-NbKBQ" base_Port="_54lN8Js1Eeyyx6Ts-NbKBQ"/>
+  <PortsAndFlows:ItemFlow xmi:id="_-HdpMJs1Eeyyx6Ts-NbKBQ" base_InformationFlow="_-HZXwJs1Eeyyx6Ts-NbKBQ"/>
 </xmi:XMI>
