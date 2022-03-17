@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Blocks="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks" xmlns:PortsAndFlows="http://www.eclipse.org/papyrus/sysml/1.6/SysML/PortsAndFlows" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks http://www.eclipse.org/papyrus/sysml/1.6/SysML#//blocks http://www.eclipse.org/papyrus/sysml/1.6/SysML/PortsAndFlows http://www.eclipse.org/papyrus/sysml/1.6/SysML#//portsandflows">
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Allocations="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Allocations" xmlns:Blocks="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks" xmlns:PortsAndFlows="http://www.eclipse.org/papyrus/sysml/1.6/SysML/PortsAndFlows" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Allocations http://www.eclipse.org/papyrus/sysml/1.6/SysML#//allocations http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks http://www.eclipse.org/papyrus/sysml/1.6/SysML#//blocks http://www.eclipse.org/papyrus/sysml/1.6/SysML/PortsAndFlows http://www.eclipse.org/papyrus/sysml/1.6/SysML#//portsandflows">
   <uml:Model xmi:id="_JkNWQJTIEeyryuJWvf2VNA" name="LCLS-II_Timing">
     <packageImport xmi:type="uml:PackageImport" xmi:id="_JpbNcZTIEeyryuJWvf2VNA">
       <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
@@ -47,6 +47,10 @@
         <ownedAttribute xmi:type="uml:Property" xmi:id="_sCxB45m6Eeyz5IO1MYY_iQ" name="opcpa" type="_Td0FYJm6Eeyz5IO1MYY_iQ" aggregation="composite" association="_sCxB4Jm6Eeyz5IO1MYY_iQ"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_sW5e0Zm6Eeyz5IO1MYY_iQ" name="rfof" type="_DFt1kJm6Eeyz5IO1MYY_iQ" aggregation="composite" association="_sW43wJm6Eeyz5IO1MYY_iQ"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_syvtUZm6Eeyz5IO1MYY_iQ" name="mods" type="_SMAfQJm6Eeyz5IO1MYY_iQ" aggregation="composite" association="_syvGQJm6Eeyz5IO1MYY_iQ"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_duHxoqCLEey7d-zad9kb0g" name="daq_interface" type="_bOFd0KCLEey7d-zad9kb0g" aggregation="composite" association="_duHKkKCLEey7d-zad9kb0g">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_duHxo6CLEey7d-zad9kb0g"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_duHxpKCLEey7d-zad9kb0g" value="1"/>
+        </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_q2OWQJm6Eeyz5IO1MYY_iQ" memberEnd="_q2O9UZm6Eeyz5IO1MYY_iQ _q2O9VJm6Eeyz5IO1MYY_iQ">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_q2OWQZm6Eeyz5IO1MYY_iQ" source="org.eclipse.papyrus">
@@ -115,15 +119,42 @@
             <nestedClassifier xmi:type="uml:Class" xmi:id="_tCKmIJp6Eeyz5IO1MYY_iQ" name="TSP"/>
           </packagedElement>
           <packagedElement xmi:type="uml:Class" xmi:id="_46ySoJm5Eeyz5IO1MYY_iQ" name="Fiber_Switch"/>
-          <packagedElement xmi:type="uml:Class" xmi:id="_yfRRYJphEeyz5IO1MYY_iQ" name="OL-MDL">
+          <packagedElement xmi:type="uml:Class" xmi:id="_yfRRYJphEeyz5IO1MYY_iQ" name="OL-MDL" classifierBehavior="_Y8s8AJ_FEey7d-zad9kb0g">
             <ownedAttribute xmi:type="uml:Property" xmi:id="_h7HuUpp8Eeyz5IO1MYY_iQ" name="cycle_pfts" type="_04KxwJm5Eeyz5IO1MYY_iQ" association="_h7HHQJp8Eeyz5IO1MYY_iQ"/>
             <ownedAttribute xmi:type="uml:Property" xmi:id="_hFIV8pqGEeyz5IO1MYY_iQ" name="smaract_stage" type="_eOCNAJqGEeyz5IO1MYY_iQ" aggregation="composite" association="_hFHu4JqGEeyz5IO1MYY_iQ"/>
-            <ownedAttribute xmi:type="uml:Port" xmi:id="_dxkPQJqNEeyz5IO1MYY_iQ" name="Delay_Out" visibility="public" type="_LXWooJqLEeyz5IO1MYY_iQ" aggregation="composite"/>
-            <ownedAttribute xmi:type="uml:Port" xmi:id="_54lN8Js1Eeyyx6Ts-NbKBQ" name="Delay_In" type="_LXWooJqLEeyz5IO1MYY_iQ" aggregation="composite"/>
+            <ownedAttribute xmi:type="uml:Port" xmi:id="_dxkPQJqNEeyz5IO1MYY_iQ" name="Delay_In" visibility="public" type="_LXWooJqLEeyz5IO1MYY_iQ" aggregation="composite"/>
+            <ownedAttribute xmi:type="uml:Port" xmi:id="_54lN8Js1Eeyyx6Ts-NbKBQ" name="Delay_Out" type="_LXWooJqLEeyz5IO1MYY_iQ" aggregation="composite"/>
             <ownedAttribute xmi:type="uml:Property" xmi:id="_GFj0Ip9HEeyZFePePvi5rw" name="delay calculation" type="_D74K0J9HEeyZFePePvi5rw" aggregation="composite" association="_GFjNEJ9HEeyZFePePvi5rw">
               <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_GFkbMJ9HEeyZFePePvi5rw"/>
               <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_GFkbMZ9HEeyZFePePvi5rw" value="1"/>
             </ownedAttribute>
+            <ownedBehavior xmi:type="uml:Activity" xmi:id="_Y8s8AJ_FEey7d-zad9kb0g" name="OL-MDL_Set_Delay" node="_1_IT8J_GEey7d-zad9kb0g _VfyeUJ_HEey7d-zad9kb0g _jd5_AJ_HEey7d-zad9kb0g _omcmIJ_HEey7d-zad9kb0g _s7SfcJ_HEey7d-zad9kb0g _w-J38J_HEey7d-zad9kb0g _0D9LQJ_HEey7d-zad9kb0g _29T-AJ_HEey7d-zad9kb0g _Pn8PQJ_JEey7d-zad9kb0g _W9D7UJ_MEey7d-zad9kb0g" group="_zZcgkJ_FEey7d-zad9kb0g _-amg4J_FEey7d-zad9kb0g _CRujcJ_GEey7d-zad9kb0g _iuwPcJ_GEey7d-zad9kb0g">
+              <edge xmi:type="uml:ControlFlow" xmi:id="_7W-s8J_HEey7d-zad9kb0g" name="Yes" target="_0D9LQJ_HEey7d-zad9kb0g" source="_s7SfcJ_HEey7d-zad9kb0g"/>
+              <edge xmi:type="uml:ControlFlow" xmi:id="_FS6KkJ_IEey7d-zad9kb0g" name="No" target="_w-J38J_HEey7d-zad9kb0g" source="_s7SfcJ_HEey7d-zad9kb0g"/>
+              <edge xmi:type="uml:ControlFlow" xmi:id="_IiaMcJ_IEey7d-zad9kb0g" name="No" inPartition="_-amg4J_FEey7d-zad9kb0g" target="_29T-AJ_HEey7d-zad9kb0g" source="_29T-AJ_HEey7d-zad9kb0g"/>
+              <edge xmi:type="uml:ControlFlow" xmi:id="_QMh_gJ_IEey7d-zad9kb0g" name="Yes" target="_w-J38J_HEey7d-zad9kb0g" source="_29T-AJ_HEey7d-zad9kb0g"/>
+              <edge xmi:type="uml:ControlFlow" xmi:id="_TwqNkJ_IEey7d-zad9kb0g" target="_29T-AJ_HEey7d-zad9kb0g" source="_0D9LQJ_HEey7d-zad9kb0g"/>
+              <edge xmi:type="uml:ControlFlow" xmi:id="_EV0awJ_JEey7d-zad9kb0g" target="_s7SfcJ_HEey7d-zad9kb0g" source="_jd5_AJ_HEey7d-zad9kb0g"/>
+              <edge xmi:type="uml:ControlFlow" xmi:id="_G4vqgJ_JEey7d-zad9kb0g" target="_VfyeUJ_HEey7d-zad9kb0g" source="_1_IT8J_GEey7d-zad9kb0g"/>
+              <group xmi:type="uml:ActivityPartition" xmi:id="_zZcgkJ_FEey7d-zad9kb0g" name="User" node="_1_IT8J_GEey7d-zad9kb0g" represents="_fNLp0JTIEeyryuJWvf2VNA"/>
+              <group xmi:type="uml:ActivityPartition" xmi:id="_-amg4J_FEey7d-zad9kb0g" name="SmarAct_Stage" node="_s7SfcJ_HEey7d-zad9kb0g _29T-AJ_HEey7d-zad9kb0g" represents="_eOCNAJqGEeyz5IO1MYY_iQ" edge="_IiaMcJ_IEey7d-zad9kb0g"/>
+              <group xmi:type="uml:ActivityPartition" xmi:id="_CRujcJ_GEey7d-zad9kb0g" name="Delay_Calculation" represents="_D74K0J9HEeyZFePePvi5rw"/>
+              <group xmi:type="uml:ActivityPartition" xmi:id="_iuwPcJ_GEey7d-zad9kb0g" name="OL-MDL" node="_W9D7UJ_MEey7d-zad9kb0g" represents="_yfRRYJphEeyz5IO1MYY_iQ"/>
+              <node xmi:type="uml:InitialNode" xmi:id="_1_IT8J_GEey7d-zad9kb0g" name="" outgoing="_G4vqgJ_JEey7d-zad9kb0g" inPartition="_zZcgkJ_FEey7d-zad9kb0g"/>
+              <node xmi:type="uml:OpaqueAction" xmi:id="_VfyeUJ_HEey7d-zad9kb0g" name="Write Delay" incoming="_G4vqgJ_JEey7d-zad9kb0g">
+                <outputValue xmi:type="uml:OutputPin" xmi:id="_IZGioJ_MEey7d-zad9kb0g" name="Delay">
+                  <upperBound xmi:type="uml:LiteralInteger" xmi:id="_IZHJsJ_MEey7d-zad9kb0g" value="1"/>
+                </outputValue>
+              </node>
+              <node xmi:type="uml:OpaqueAction" xmi:id="_jd5_AJ_HEey7d-zad9kb0g" name="Convert to position" outgoing="_EV0awJ_JEey7d-zad9kb0g"/>
+              <node xmi:type="uml:OpaqueAction" xmi:id="_omcmIJ_HEey7d-zad9kb0g" name="Evaluate Limits"/>
+              <node xmi:type="uml:DecisionNode" xmi:id="_s7SfcJ_HEey7d-zad9kb0g" name="Within Limits?" incoming="_EV0awJ_JEey7d-zad9kb0g" outgoing="_7W-s8J_HEey7d-zad9kb0g _FS6KkJ_IEey7d-zad9kb0g" inPartition="_-amg4J_FEey7d-zad9kb0g"/>
+              <node xmi:type="uml:ActivityFinalNode" xmi:id="_w-J38J_HEey7d-zad9kb0g" name="" incoming="_FS6KkJ_IEey7d-zad9kb0g _QMh_gJ_IEey7d-zad9kb0g"/>
+              <node xmi:type="uml:OpaqueAction" xmi:id="_0D9LQJ_HEey7d-zad9kb0g" name="Execute Move" incoming="_7W-s8J_HEey7d-zad9kb0g" outgoing="_TwqNkJ_IEey7d-zad9kb0g"/>
+              <node xmi:type="uml:DecisionNode" xmi:id="_29T-AJ_HEey7d-zad9kb0g" name="Move done?" incoming="_IiaMcJ_IEey7d-zad9kb0g _TwqNkJ_IEey7d-zad9kb0g" outgoing="_IiaMcJ_IEey7d-zad9kb0g _QMh_gJ_IEey7d-zad9kb0g" inPartition="_-amg4J_FEey7d-zad9kb0g"/>
+              <node xmi:type="uml:OpaqueAction" xmi:id="_Pn8PQJ_JEey7d-zad9kb0g" name="Check Delay Limits"/>
+              <node xmi:type="uml:DecisionNode" xmi:id="_W9D7UJ_MEey7d-zad9kb0g" name="Within Limits?" inPartition="_iuwPcJ_GEey7d-zad9kb0g"/>
+            </ownedBehavior>
             <ownedOperation xmi:type="uml:Operation" xmi:id="_Pl5FoJqLEeyz5IO1MYY_iQ" name="set">
               <ownedParameter xmi:type="uml:Parameter" xmi:id="_V_sgUJqLEeyz5IO1MYY_iQ" name="target" type="_LXWooJqLEeyz5IO1MYY_iQ"/>
             </ownedOperation>
@@ -131,8 +162,8 @@
               <ownedParameter xmi:type="uml:Parameter" xmi:id="_mlHacJqLEeyz5IO1MYY_iQ" type="_LXWooJqLEeyz5IO1MYY_iQ" direction="return"/>
             </ownedOperation>
             <nestedClassifier xmi:type="uml:Class" xmi:id="_eOCNAJqGEeyz5IO1MYY_iQ" name="SmarAct_Stage">
-              <ownedAttribute xmi:type="uml:Port" xmi:id="_z5daoJ9HEeyZFePePvi5rw" name="Position_Out" aggregation="composite"/>
-              <ownedAttribute xmi:type="uml:Port" xmi:id="_4w5DoJ9HEeyZFePePvi5rw" name="Position_In" aggregation="composite"/>
+              <ownedAttribute xmi:type="uml:Port" xmi:id="_z5daoJ9HEeyZFePePvi5rw" name="Position_Out" type="_8SwS8JqIEeyz5IO1MYY_iQ" aggregation="composite"/>
+              <ownedAttribute xmi:type="uml:Port" xmi:id="_4w5DoJ9HEeyZFePePvi5rw" name="Position_In" type="_8SwS8JqIEeyz5IO1MYY_iQ" aggregation="composite"/>
               <ownedOperation xmi:type="uml:Operation" xmi:id="_pwOhAJqKEeyz5IO1MYY_iQ" name="put">
                 <ownedParameter xmi:type="uml:Parameter" xmi:id="_59eLsJqKEeyz5IO1MYY_iQ" name="target" type="_8SwS8JqIEeyz5IO1MYY_iQ"/>
               </ownedOperation>
@@ -144,7 +175,7 @@
               <ownedAttribute xmi:type="uml:Port" xmi:id="_TW8xsJ9HEeyZFePePvi5rw" name="Delay_In" type="_LXWooJqLEeyz5IO1MYY_iQ" aggregation="composite"/>
               <ownedAttribute xmi:type="uml:Port" xmi:id="_ZzHj4J9HEeyZFePePvi5rw" name="Delay_Out" type="_LXWooJqLEeyz5IO1MYY_iQ" aggregation="composite"/>
               <ownedAttribute xmi:type="uml:Port" xmi:id="_d26wgJ9HEeyZFePePvi5rw" name="Position_Out" type="_LXWooJqLEeyz5IO1MYY_iQ" aggregation="composite"/>
-              <ownedAttribute xmi:type="uml:Port" xmi:id="_lWaA4J9HEeyZFePePvi5rw" name="Position_In" aggregation="composite"/>
+              <ownedAttribute xmi:type="uml:Port" xmi:id="_lWaA4J9HEeyZFePePvi5rw" name="Position_In" type="_8SwS8JqIEeyz5IO1MYY_iQ" aggregation="composite"/>
             </nestedClassifier>
           </packagedElement>
           <packagedElement xmi:type="uml:Association" xmi:id="_h7HHQJp8Eeyz5IO1MYY_iQ" memberEnd="_h7HuUpp8Eeyz5IO1MYY_iQ _h7HuVZp8Eeyz5IO1MYY_iQ">
@@ -221,6 +252,13 @@
         </packagedElement>
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_G-anYJ9KEeyZFePePvi5rw" name="Behavior"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_bOFd0KCLEey7d-zad9kb0g" name="DAQ_Interface"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="_duHKkKCLEey7d-zad9kb0g" memberEnd="_duHxoqCLEey7d-zad9kb0g _duHxpaCLEey7d-zad9kb0g">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_duHxoKCLEey7d-zad9kb0g" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_duHxoaCLEey7d-zad9kb0g" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_duHxpaCLEey7d-zad9kb0g" name="lcls_ii_timing_control_system" type="_swszIJXOEeyryuJWvf2VNA" association="_duHKkKCLEey7d-zad9kb0g"/>
+      </packagedElement>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_Jm5d4JTIEeyryuJWvf2VNA">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Jm76IJTIEeyryuJWvf2VNA" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -316,4 +354,9 @@
   <PortsAndFlows:ItemFlow xmi:id="_8Em3IJ9HEeyZFePePvi5rw" base_InformationFlow="_8EilsJ9HEeyZFePePvi5rw"/>
   <PortsAndFlows:ItemFlow xmi:id="_-JLW8J9HEeyZFePePvi5rw" base_InformationFlow="_-JHskJ9HEeyZFePePvi5rw"/>
   <PortsAndFlows:ItemFlow xmi:id="_-uBJYJ9HEeyZFePePvi5rw" base_InformationFlow="_-t838J9HEeyZFePePvi5rw"/>
+  <Allocations:AllocateActivityPartition xmi:id="_zZinMJ_FEey7d-zad9kb0g" base_ActivityPartition="_zZcgkJ_FEey7d-zad9kb0g"/>
+  <Allocations:AllocateActivityPartition xmi:id="_-apkMJ_FEey7d-zad9kb0g" base_ActivityPartition="_-amg4J_FEey7d-zad9kb0g"/>
+  <Allocations:AllocateActivityPartition xmi:id="_CRw_sJ_GEey7d-zad9kb0g" base_ActivityPartition="_CRujcJ_GEey7d-zad9kb0g"/>
+  <Allocations:AllocateActivityPartition xmi:id="_iuyEoJ_GEey7d-zad9kb0g" base_ActivityPartition="_iuwPcJ_GEey7d-zad9kb0g"/>
+  <Blocks:Block xmi:id="_bOIhIKCLEey7d-zad9kb0g" base_Class="_bOFd0KCLEey7d-zad9kb0g"/>
 </xmi:XMI>
