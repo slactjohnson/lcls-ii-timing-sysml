@@ -104,6 +104,7 @@
               <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UvqK45qCEeyz5IO1MYY_iQ" value="3"/>
               <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UvqK5JqCEeyz5IO1MYY_iQ" value="8"/>
             </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_zO8gArBIEeyJtvLZcrmfCA" name="omo laser" type="_wiqf8LBIEeyJtvLZcrmfCA" aggregation="composite" association="_zO3AcLBIEeyJtvLZcrmfCA"/>
           </packagedElement>
           <packagedElement xmi:type="uml:Class" xmi:id="_04KxwJm5Eeyz5IO1MYY_iQ" name="Cycle_PFTS">
             <ownedAttribute xmi:type="uml:Property" xmi:id="_-vKyYJqFEeyz5IO1MYY_iQ" name="fls" type="_nLOA4Jp6Eeyz5IO1MYY_iQ" aggregation="composite" association="_-vKLUJqFEeyz5IO1MYY_iQ">
@@ -182,7 +183,10 @@
             <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_h7HuUJp8Eeyz5IO1MYY_iQ" source="org.eclipse.papyrus">
               <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_h7HuUZp8Eeyz5IO1MYY_iQ" key="nature" value="UML_Nature"/>
             </eAnnotations>
-            <ownedEnd xmi:type="uml:Property" xmi:id="_h7HuVZp8Eeyz5IO1MYY_iQ" name="ol-mdl" type="_yfRRYJphEeyz5IO1MYY_iQ" association="_h7HHQJp8Eeyz5IO1MYY_iQ"/>
+            <ownedEnd xmi:type="uml:Property" xmi:id="_h7HuVZp8Eeyz5IO1MYY_iQ" name="ol-mdl" type="_yfRRYJphEeyz5IO1MYY_iQ" association="_h7HHQJp8Eeyz5IO1MYY_iQ">
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ikMZ8LBIEeyJtvLZcrmfCA" value="3"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iknQsLBIEeyJtvLZcrmfCA" value="3"/>
+            </ownedEnd>
           </packagedElement>
           <packagedElement xmi:type="uml:Association" xmi:id="_TEN8wJqCEeyz5IO1MYY_iQ" memberEnd="_TEN8w5qCEeyz5IO1MYY_iQ _TEPK4pqCEeyz5IO1MYY_iQ">
             <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_TEN8wZqCEeyz5IO1MYY_iQ" source="org.eclipse.papyrus">
@@ -237,6 +241,13 @@
           <packagedElement xmi:type="uml:InformationFlow" xmi:id="_8EilsJ9HEeyZFePePvi5rw" name="Motor_Pos_Out" informationSource="_z5daoJ9HEeyZFePePvi5rw" informationTarget="_lWaA4J9HEeyZFePePvi5rw"/>
           <packagedElement xmi:type="uml:InformationFlow" xmi:id="_-JHskJ9HEeyZFePePvi5rw" name="Delay_In" informationSource="_dxkPQJqNEeyz5IO1MYY_iQ" informationTarget="_TW8xsJ9HEeyZFePePvi5rw"/>
           <packagedElement xmi:type="uml:InformationFlow" xmi:id="_-t838J9HEeyZFePePvi5rw" name="Delay_Out" informationSource="_ZzHj4J9HEeyZFePePvi5rw" informationTarget="_54lN8Js1Eeyyx6Ts-NbKBQ"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_wiqf8LBIEeyJtvLZcrmfCA" name="OMO Laser"/>
+          <packagedElement xmi:type="uml:Association" xmi:id="_zO3AcLBIEeyJtvLZcrmfCA" memberEnd="_zO8gArBIEeyJtvLZcrmfCA _zO_jULBIEeyJtvLZcrmfCA">
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_zO8gALBIEeyJtvLZcrmfCA" source="org.eclipse.papyrus">
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_zO8gAbBIEeyJtvLZcrmfCA" key="nature" value="UML_Nature"/>
+            </eAnnotations>
+            <ownedEnd xmi:type="uml:Property" xmi:id="_zO_jULBIEeyJtvLZcrmfCA" name="pfts_manager" type="_qVe2IJm5Eeyz5IO1MYY_iQ" association="_zO3AcLBIEeyJtvLZcrmfCA"/>
+          </packagedElement>
         </packagedElement>
         <packagedElement xmi:type="uml:Package" xmi:id="_0QTLYJm3Eeyz5IO1MYY_iQ" name="Laser_Locker">
           <packagedElement xmi:type="uml:Class" xmi:id="__qwKkJm5Eeyz5IO1MYY_iQ" name="Laser_Locker_Manager"/>
@@ -359,4 +370,5 @@
   <Allocations:AllocateActivityPartition xmi:id="_CRw_sJ_GEey7d-zad9kb0g" base_ActivityPartition="_CRujcJ_GEey7d-zad9kb0g"/>
   <Allocations:AllocateActivityPartition xmi:id="_iuyEoJ_GEey7d-zad9kb0g" base_ActivityPartition="_iuwPcJ_GEey7d-zad9kb0g"/>
   <Blocks:Block xmi:id="_bOIhIKCLEey7d-zad9kb0g" base_Class="_bOFd0KCLEey7d-zad9kb0g"/>
+  <Blocks:Block xmi:id="_wi2tMLBIEeyJtvLZcrmfCA" base_Class="_wiqf8LBIEeyJtvLZcrmfCA"/>
 </xmi:XMI>
